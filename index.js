@@ -8,7 +8,7 @@ function calculateFunc() {
 
   let ar = [];
   for (var i = 0; i < 200; i++) {
-    if (calculation < input) {
+    if (calculation + myCur < input) {
       ar.push(myCur);
       calculation = calculation + myCur;
     } else {
@@ -44,8 +44,10 @@ function calculateFunc() {
   for (var i = 0; i < coins.length; i++) {
     let li = document.createElement("li");
 
-    li.innerHTML = coins[i][0] + ": " + coins[i].length + " coins";
+    if (coins[i][0] !== undefined) {
+      li.innerHTML = coins[i][0] + ": " + coins[i].length + " coins";
 
-    ul.appendChild(li);
+      ul.appendChild(li);
+    }
   }
 }

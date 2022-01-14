@@ -1,57 +1,10 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: monospace;
 }
 
 body {
-  background: linear-gradient(315deg, #0066ff, #00ffcc);
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container {
-  background-color: wheat;
-  padding: 10px 24px;
-  border-radius: 20px;
-  width: 490px;
-}
-h1 {
-  color: #364547;
-  margin-left: 72px;
-  margin-bottom: 0.5em;
-  font-family: monospace;
-}
-
-.currency {
-  height: 32px;
-  width: 300px;
-  border-radius: 7px;
-}
-.option {
-  width: 100px;
-  height: 30px;
-}
-.btn {
-  width: 260px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  margin-top: 10px;
-  margin-left: 75px;
-} */
-
-
-*{
-  margin: 0;
-  padding: 0;
-  font-family: monospace;
-}
-
-body{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,10 +12,10 @@ body{
   background: #131313;
 }
 
-.container{
+.container {
   position: relative;
 }
-.container .card{
+.container .card {
   position: relative;
   width: 320px;
   height: 450px;
@@ -70,21 +23,17 @@ body{
   border-radius: 20px;
   overflow: hidden;
 }
-.container .card:before{
-
-  content: '';
+.container .card:before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #0096cd;
   clip-path: circle(170px at 100% 0%);
-
-
 }
-.container .card:after{
-  content: 'ATM';
+.container .card:after {
+  content: "ATM";
   position: absolute;
   top: 30%;
   left: 0%;
@@ -93,7 +42,7 @@ body{
   font-style: italic;
   color: rgba(255, 255, 255, 0.04);
 }
-.container .card .imgBox{
+.container .card .imgBox {
   position: absolute;
   top: 50%;
   transform: translate(-50%);
@@ -102,8 +51,7 @@ body{
   height: 220px;
   transition: 0.5s;
 }
-.container .card:hover .imgBox{
-
+.container .card:hover .imgBox {
   top: 0%;
   transform: translateY(0%);
 }
@@ -111,8 +59,8 @@ body{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-57%) rotate(-25deg);
-  width: 270px;
+  transform: translate(-50%, -57%) rotate(-25deg);
+  width: 180px;
 }
 
 .container .card .contentBox {
@@ -125,38 +73,31 @@ body{
   z-index: 10;
 }
 
-.container .card:hover .contentBox{
+.container .card:hover .contentBox {
   height: 210px;
-
 }
-.container .card .contentBox h2{
+.container .card .contentBox h1 {
   position: relative;
   font-weight: 600;
   letter-spacing: 1px;
   color: #fff;
 }
 .container .card .contentBox .size,
-.container .card .contentBox .color
-{
+.container .card .contentBox .color {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 8px 20px;
   transition: 0.5s;
-
 }
-.container .card:hover .contentBox .size{
+.container .card:hover .contentBox .size {
   opacity: 1;
   visibility: visible;
   transition-delay: 0.5s;
-
 }
 
-
-
 .container .card .contentBox .size h3,
-.container .card .contentBox .color h3
-{
+.container .card .contentBox .color h3 {
   color: #fff;
   font-weight: 300;
   font-size: 14px;
@@ -181,7 +122,7 @@ body{
   background: #9bdc28;
 }
 
-.container .card .contentBox .color span{
+.container .card .contentBox .color span {
   width: 20px;
   height: 20px;
   background: #ff0;
@@ -189,17 +130,17 @@ body{
   margin: 0 5px;
   cursor: pointer;
 }
-.container .card .contentBox .color span:nth-child(2){
+.container .card .contentBox .color span:nth-child(2) {
   background: #9bdc28;
 }
-.container .card .contentBox .color span:nth-child(3){
+.container .card .contentBox .color span:nth-child(3) {
   background: #03a9f4;
 }
-.container .card .contentBox .color span:nth-child(4){
+.container .card .contentBox .color span:nth-child(4) {
   background: #e91e63;
 }
 
-.container .card .contentBox a{
+.container .card .contentBox a {
   display: inline-block;
   padding: 10px 20px;
   background: #fff;
@@ -211,10 +152,72 @@ body{
   opacity: 0;
   transform: translateY(50px);
   transition: 0.5s;
-
 }
-.container .card:hover .contentBox a{
+.container .card:hover .contentBox a {
   opacity: 1;
   transform: translateY(0px);
   transition-delay: 0.75s;
+}
+
+#ul {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 4px;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #3f89ac;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+#coins {
+  height: 25px;
+}
+#selectedAmount {
+  height: 30px;
+  font-weight: bold;
 }

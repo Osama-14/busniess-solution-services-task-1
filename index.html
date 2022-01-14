@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./style.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Document</title>
@@ -15,10 +16,14 @@
           <img src="./i.png" alt="" />
         </div>
         <div class="contentBox">
-          <h2>Atm Bank</h2>
+          <h1>ATM Bank</h1>
           <div class="size">
             <h3>Your Amount:</h3>
             <input type="number" id="coins" />
+
+
+
+
           </div>
           <div class="color">
             <h3>preferred Amount:</h3>
@@ -32,24 +37,23 @@
               <option value="1">1</option>
             </select>
           </div>
-          <button onclick="calculateFunc()">Enter</button>
+         
+          <button class="button-52" role="button" onclick="calculateFunc()"> Enter</button>
+   
         </div>
       </div>
 
+      <h3>Here is your result</h3>
+      <hr />
+
       <ul id="ul"></ul>
-
-      <!-- <ul id="ul">
-        
-            <li>500</li>
-            <li>100</li>
-            <li>50</li>
-            <li>20</li>
-            <li>10</li>
-            <li>5</li>
-            <li>1</li>
-
-        </ul> -->
+      <hr>
     </div>
+
+
+
+    
+   
 
     <script src="./index.js"></script>
   </body>
