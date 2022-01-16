@@ -184,7 +184,7 @@ h3 {
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
-  color: white;
+  color: rgb(245, 245, 245);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
