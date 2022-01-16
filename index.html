@@ -18,28 +18,25 @@
         <div class="contentBox">
           <h1>ATM Bank</h1>
           <div class="size">
-            <h3>Your Amount:</h3>
+            <h3>Your Bank Cash:</h3>
             <input type="number" id="coins" />
-
-
-
-
           </div>
           <div class="color">
             <h3>preferred Amount:</h3>
             <select id="selectedAmount">
-              <option value="500">500</option>
-              <option value="100">100</option>
-              <option value="50">50</option>
-              <option value="20">20</option>
-              <option value="10">10</option>
-              <option value="5">5</option>
-              <option value="1">1</option>
+              <option class="options" value="500">500</option>
+              <option class="options" value="100">100</option>
+              <option class="options" value="50">50</option>
+              <option class="options" value="20">20</option>
+              <option class="options" value="10">10</option>
+              <option class="options" value="5">5</option>
+              <option class="options" value="1">1</option>
             </select>
           </div>
-         
-          <button class="button-52" role="button" onclick="calculateFunc()"> Enter</button>
-   
+
+          <button class="button-52" role="button" onclick="calculateFunc()">
+            Enter
+          </button>
         </div>
       </div>
 
@@ -47,13 +44,8 @@
       <hr />
 
       <ul id="ul"></ul>
-      <hr>
+      <hr />
     </div>
-
-
-
-    
-   
 
     <script src="./index.js"></script>
   </body>
